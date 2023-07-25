@@ -2,14 +2,14 @@ const canciones = [
     {
         titulo:"Rasguña las piedras",
         album:"Confesiones de Invierno",
-        imagen: "imagenes/Confesiones de Invierno.jpg",
+        imagen: "./imagenes/Confesiones de Invierno.jpg",
         autor:"Sui Generis",
         acordes:"",
     },
     {
         titulo:"Canción Para Mi Muerte",
         album:"Vida",
-        imagen: "imagenes/Vida.jpg",
+        imagen: "./imagenes/Vida.jpg",
         autor:"Sui Generis",
         acordes:`Sui Generis - Canción Para Mi Muerte
         [Primeira Parte]
@@ -135,7 +135,7 @@ const canciones = [
     {
         titulo:"Peperina",
         album:"Peperina",
-        imagen: "imagenes/Peperina.jpg",
+        imagen: "./imagenes/Peperina.jpg",
         autor:"Seru Giran",
         acordes:"",
     },

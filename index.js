@@ -29,7 +29,7 @@ function agregarCancion() {
   const nuevaCancion = document.createElement("div");
   nuevaCancion.id = "conteiner-cancion-objeto";
   nuevaCancion.innerHTML = `
-            <img src="imagenes/${lastItem.album}.jpg">
+            <img src="./imagenes/${lastItem.album}.jpg">
           <div id="tituloYNombre">
             <p id="nombreCancion"><i class="fa-solid fa-music"></i>${lastItem.titulo}</p>
             <p id="discoCancion"><i class="fa-solid fa-compact-disc"></i>${lastItem.album}</p>
