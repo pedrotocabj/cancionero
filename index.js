@@ -7,7 +7,7 @@ function crearCancionInicio(canciones) {
     const nuevaCancion = document.createElement("div");
     nuevaCancion.id = "conteiner-cancion-objeto";
     nuevaCancion.innerHTML = `
-            <img src="/imagenes/${cancion.album}.jpg">
+            <img src="./imagenes/${cancion.album}.jpg">
           <div id="tituloYNombre">
             <p id="nombreCancion"><i class="fa-solid fa-music"></i>${cancion.titulo}</p>
             <p id="discoCancion"><i class="fa-solid fa-compact-disc"></i>${cancion.album}</p>
