@@ -2,7 +2,7 @@ const canciones = [
     {
         titulo:"Rasguña las piedras",
         album:"Confesiones de Invierno",
-        imagen: "/Users/pedro/OneDrive/Escritorio/Visual Studio/20-7/imagenes/Confesiones de Invierno.jpg",
+        imagen: "imagenes\Confesiones de Invierno.jpga",
         autor:"Sui Generis",
         acordes:"",
     },
