@@ -1,31 +1,30 @@
-*{
+* {
   margin: 0;
   color: unset;
   text-decoration: none;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-ul{
+ul {
   list-style: none;
   padding: 0;
   text-align: center;
 }
 
-#container-btn{
+#container-btn {
   margin-top: 15px;
   display: flex;
   justify-content: center;
 }
 
-
-body{
+body {
   min-height: 100vh;
   display: grid;
   grid-template-rows: 70px 100px auto;
   background-color: rgb(196, 196, 196);
 }
 
-header{
+header {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -34,7 +33,7 @@ header{
   margin-bottom: 15px;
 }
 
-nav{
+nav {
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -42,7 +41,7 @@ nav{
   flex-wrap: wrap;
 }
 
-#conteiner-selector{
+#conteiner-selector {
   display: flex;
   justify-content: center;
   margin-bottom: 15px;
@@ -56,57 +55,75 @@ nav{
   padding: 6px 10px 6px 0px;
 }
 
-#conteiner-cancion-objeto{
-  align-items: center;
-display: flex;
+#conteiner-cancion-objeto {
+  display: grid;
+  grid-template-columns: 20% auto 60px;
   margin: 5px;
   padding: 5px;
   border-radius: 5px;
-  background-color: rgb(156, 156, 156)
+  background-color: rgb(156, 156, 156);
 }
 
-#conteiner-cancion-objeto img{
-  width: 20%;
-  height: min-content;
+#conteiner-cancion-objeto img {
+  width: 100%;
+  height:100%;
   border-radius: 2px;
 }
 
-#tituloYNombre{
+#tituloYNombre {
   margin-left: 1em;
   display: grid;
   font-weight: 400;
   grid-template-rows: 1fr 1fr 1fr;
 }
 
-#tituloYNombre p{
+#tituloYNombre p {
   display: flex;
   align-items: center;
 }
 
-i{
+p i{
   margin-right: 5px;
 }
 
-.centrado{
+.centrado {
   text-align: center;
 }
 
-#boton-borrar{
+#eliminar-btn{
+  cursor: pointer;
+  width:50px;
+  height: 50px;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid black;
+  text-align: center;
+  border-radius: 3px;
+}
+
+#btn-agregar{
+  cursor: pointer;
+  margin-top: 8px;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid black;
+}
+
+#boton-borrar {
   display: flex;
-  justify-content: end;
+  align-items: center;
+  justify-content: center;
   text-align: end;
 }
 
-#contenedor-form{
+#contenedor-form {
   margin-top: 20px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: end;
   align-items: center;
   text-align: center;
 }
 
-form{
+form {
   display: flex;
   flex-direction: column;
   width: 60%;
@@ -115,9 +132,6 @@ form{
   border-radius: 5px;
 }
 
-form button{
-  margin-top: 7px;
-}
-form p{
+form p, form button  {
   margin-bottom: 7px;
 }

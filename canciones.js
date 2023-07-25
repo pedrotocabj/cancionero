@@ -2,7 +2,7 @@ const canciones = [
     {
         titulo:"Rasguña las piedras",
         album:"Confesiones de Invierno",
-        imagen: "imagenes\Confesiones de Invierno.jpga",
+        imagen: "./imagenes/Confesiones de Invierno.jpg",
         autor:"Sui Generis",
         acordes:"",
     },
@@ -135,7 +135,7 @@ const canciones = [
     {
         titulo:"Peperina",
         album:"Peperina",
-        imagen: "imagenes/Peperina.jpg",
+        imagen: "./imagenes/Peperina.jpg",
         autor:"Seru Giran",
         acordes:"",
     },

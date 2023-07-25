@@ -35,7 +35,9 @@ function agregarCancion() {
             <p id="discoCancion"><i class="fa-solid fa-compact-disc"></i>${lastItem.album}</p>
             <p id="artistaCancion"><i class="fa-solid fa-people-group"></i>${lastItem.autor}</p>
           </div>
-        </div>
+          <div id="boton-borrar">
+          <button id="eliminar-btn"><i class="fa-solid fa-trash-can"></i></button>
+          </div>
     `;
   contenedorCancionesLista.appendChild(nuevaCancion);
 }
@@ -59,3 +61,4 @@ function getFormulario(e) {
     acordes: e.target.elements.acordes.value,
   };
 }
+
