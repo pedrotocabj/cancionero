@@ -40,6 +40,7 @@ function agregarCancion() {
           </div>
     `;
   contenedorCancionesLista.appendChild(nuevaCancion);
+
 }
 
 const botonSubmit = document.getElementById("btn-agregar");
