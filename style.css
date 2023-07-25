@@ -1,0 +1,123 @@
+*{
+  margin: 0;
+  color: unset;
+  text-decoration: none;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+ul{
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+#container-btn{
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+
+body{
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: 70px 100px auto;
+  background-color: rgb(196, 196, 196);
+}
+
+header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(204, 204, 204);
+  font-weight: 650;
+  margin-bottom: 15px;
+}
+
+nav{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+#conteiner-selector{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+#conteiner-selector select {
+  text-align: left;
+  padding: 5px 20px;
+  border-radius: 3px;
+  width: 180px;
+  padding: 6px 10px 6px 0px;
+}
+
+#conteiner-cancion-objeto{
+  align-items: center;
+display: flex;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: rgb(156, 156, 156)
+}
+
+#conteiner-cancion-objeto img{
+  width: 20%;
+  height: min-content;
+  border-radius: 2px;
+}
+
+#tituloYNombre{
+  margin-left: 1em;
+  display: grid;
+  font-weight: 400;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+#tituloYNombre p{
+  display: flex;
+  align-items: center;
+}
+
+i{
+  margin-right: 5px;
+}
+
+.centrado{
+  text-align: center;
+}
+
+#boton-borrar{
+  display: flex;
+  justify-content: end;
+  text-align: end;
+}
+
+#contenedor-form{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  background-color: rgb(156, 156, 156);
+  padding: 4px 5px 15px 5px;
+  border-radius: 5px;
+}
+
+form button{
+  margin-top: 7px;
+}
+form p{
+  margin-bottom: 7px;
+}
