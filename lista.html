@@ -1,37 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lista de canciones</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <script src="./index.js" defer></script>
     <script src="./canciones.js"></script>
-    <link rel="icon" href="./imagenes/Icon.png">
-    <script src="https://kit.fontawesome.com/5e9b432c2e.js" crossorigin="anonymous"></script>
-</head>
-<body>
+    <link rel="icon" href="./imagenes/Icon.png" />
+    <script
+      src="https://kit.fontawesome.com/5e9b432c2e.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
     <header>
-        <nav>
-          <a href="./index.html">Inicio</a>
-          <img src="./imagenes/Icon.png" alt="">
-          <a href="./lista.html">Lista</a>
-        </nav>
-      </header>
-      <main id="main-lista">
-        <p class="centrado">Canciones</p>
-        <div id="contenedor-canciones-lista">
-      </div>
+      <nav>
+        <a href="./index.html">Inicio</a>
+        <img src="./imagenes/Icon.png" alt="" />
+        <a href="./lista.html">Lista</a>
+      </nav>
+    </header>
+    <main id="main-lista">
+      <p class="centrado">Canciones</p>
+      <div id="contenedor-canciones-lista"></div>
       <div id="contenedor-form">
         <form autocomplete="off">
           <p>Agregar nueva cancion</p>
-          <input name="titulo" type="text" placeholder="Título" required>
-          <input name="album" type="text" placeholder="Álbum" required>
-          <input name="autor" type="text" placeholder="Artista" required>
-          <input name="acordes" type="text" placeholder="Acordes">
+          <input name="link" type="text" placeholder="Link de la canción" required />
+          <input name="acordes" type="text" placeholder="Acordes" />
           <button type="submit" id="btn-agregar">Agregar</button>
         </form>
       </div>
-      </main>
-</body>
+    </main>
+  </body>
 </html>
