@@ -10,7 +10,7 @@ const canciones = [
     acordes: "",
   },
   {
-      nombre:"Cuabdo te Vayas",
+      nombre:"Cuando te Vayas",
     link: "https://open.spotify.com/embed/track/2s8089EmkUwB44RzBdKX8u?utm_source=generator",
     acordes: "",
   },

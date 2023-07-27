@@ -1,0 +1,6 @@
+1- Agregar la funcionalidad del select, que por cada cancion cree una option
+2- Agrgar los acordes al Array
+
+por ultimo...
+
+local storage :v

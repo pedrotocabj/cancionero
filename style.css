@@ -57,7 +57,7 @@ nav a {
 #conteiner-selector {
   display: flex;
   justify-content: center;
-  margin-bottom: 15px;
+  margin: 15px 0px;
 }
 
 #conteiner-selector select {
