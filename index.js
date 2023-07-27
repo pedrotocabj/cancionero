@@ -3,7 +3,7 @@ const contenedorCancionesLista = document.getElementById(
 );
 
 function crearCancionInicio(canciones) {
-  canciones.forEach((cancion) => {
+  canciones.forEach((cancion, index) => {
     const nuevaCancion = document.createElement("div");
     nuevaCancion.classList = "conteiner-cancion-objeto";
     nuevaCancion.innerHTML = `
@@ -16,11 +16,16 @@ function crearCancionInicio(canciones) {
     `;
     contenedorCancionesLista.appendChild(nuevaCancion);
 
+
     const botonBorrar = document.getElementsByClassName("eliminar-btn");
     Array.from(botonBorrar).forEach((boton) => {
+      
+    const lastItem = canciones[canciones.length - 1];
+
       boton.addEventListener("click", () => {
         const divSeleccionado = boton.closest(".conteiner-cancion-objeto");
         divSeleccionado.remove();
+        canciones.splice(index,1);
       });
     });
   });
@@ -46,14 +51,16 @@ function agregarCancion() {
     `;
   contenedorCancionesLista.appendChild(nuevaCancion);
 
-  const botonBorrar = document.getElementsByClassName("eliminar-btn");
-  Array.from(botonBorrar).forEach((boton) => {
-    boton.addEventListener("click", () => {
-      const divSeleccionado = boton.closest(".conteiner-cancion-objeto");
-      divSeleccionado.remove();
-    });
+  const botonBorrar = nuevaCancion.querySelector(".eliminar-btn"); // Use querySelector to get the delete button
+  botonBorrar.addEventListener("click", () => {
+    const divSeleccionado = botonBorrar.closest(".conteiner-cancion-objeto");
+    divSeleccionado.remove();
+    canciones.splice(canciones.length - 1, 1); // Remove the last song from the 'canciones' array
   });
-}
+  
+
+  };
+
 
 const botonSubmit = document.getElementById("btn-agregar");
 const form = document.querySelector("form");
