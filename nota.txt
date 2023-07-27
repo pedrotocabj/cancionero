@@ -1,6 +1,18 @@
-1- Agregar la funcionalidad del select, que por cada cancion cree una option
 2- Agrgar los acordes al Array
 
 por ultimo...
 
 local storage :v
+
+codigo de cancion:   https://open.spotify.com/track/0eChv3249vAoIl9oVlDPSP?si=3334f4b98aad4797
+codigo de iframe:    https://open.spotify.com/embed/track/0eChv3249vAoIl9oVlDPSP?utm_source=generator
+
+31-54 (23 caracteres)
+codigo necesario
+
+codigo = 0eChv3249vAoIl9oVlDPSP?;
+
+
+
+
+codigo final = https://open.spotify.com/embed/track/${cancion.codigo}utm_source=generator

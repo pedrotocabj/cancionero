@@ -2,8 +2,6 @@ const contenedorCancionesLista = document.getElementById(
   "contenedor-canciones-lista"
 );
 
-
-
 function crearCancionInicio(canciones) {
   canciones.forEach((cancion) => {
     const nuevaCancion = document.createElement("div");
@@ -24,11 +22,15 @@ crearCancionInicio(canciones);
 
 function agregarCancion() {
   const lastItem = canciones[canciones.length - 1];
+  const codigoCancion = lastItem.link;
+
+  const codigoCorto = codigoCancion.slice(31, 54);
+
   const nuevaCancion = document.createElement("div");
   nuevaCancion.classList = "conteiner-cancion-objeto";
   nuevaCancion.innerHTML = `
   <div class="iframe-spotify">
-  <iframe style="border-radius:12px" src="${lastItem.link}" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+  <iframe style="border-radius:12px" src=https://open.spotify.com/embed/track/${codigoCorto}utm_source=generator width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
   </div>
   <div class="boton-borrar">
   <button class="eliminar-btn"><i class="fa-solid fa-trash-can"></i></button>
