@@ -15,6 +15,15 @@ function crearCancionInicio(canciones) {
           </div>
     `;
     contenedorCancionesLista.appendChild(nuevaCancion);
+
+    const botonBorrar = document.getElementsByClassName("eliminar-btn");
+Array.from(botonBorrar).forEach((boton) => {
+  boton.addEventListener("click", () => {
+    const divSeleccionado = boton.closest(".conteiner-cancion-objeto");
+    divSeleccionado.remove();
+  });
+});
+
   });
 }
 
@@ -37,6 +46,15 @@ function agregarCancion() {
   </div>
     `;
   contenedorCancionesLista.appendChild(nuevaCancion);
+
+  const botonBorrar = document.getElementsByClassName("eliminar-btn");
+Array.from(botonBorrar).forEach((boton) => {
+  boton.addEventListener("click", () => {
+    const divSeleccionado = boton.closest(".conteiner-cancion-objeto");
+    divSeleccionado.remove();
+  });
+});
+
 }
 
 const botonSubmit = document.getElementById("btn-agregar");
@@ -57,10 +75,3 @@ function getFormulario(e) {
   };
 }
 
-const botonBorrar = document.getElementsByClassName("eliminar-btn");
-Array.from(botonBorrar).forEach((boton) => {
-  boton.addEventListener("click", () => {
-    const divSeleccionado = boton.closest(".conteiner-cancion-objeto");
-    divSeleccionado.remove();
-  });
-});

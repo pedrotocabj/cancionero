@@ -18,7 +18,6 @@ ul {
 }
 
 body {
-  min-height: 100vh;
   background-color: #F6F3CC;
 }
 
@@ -140,5 +139,7 @@ form {
 
 form p,
 form button {
-  margin-bottom: 7px;
+  margin: 7px 0px;
 }
+
+
